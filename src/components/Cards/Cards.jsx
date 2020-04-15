@@ -32,7 +32,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               Recovered
             </Typography>
             <Typography variant="h5">
-              <CountUp start={0} end={recovered.value} duration={2.5} separator="," />
+              <CountUp start={0} end={recovered.value} duration={2.5} separator="," /><span className={styles.engin}> + 1</span>
             </Typography>
             <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
             <Typography variant="body2">
